@@ -30,7 +30,7 @@ module.exports = {
         await interaction.deferReply({ ephemeral: false });
 
         const row2 = new ActionRowBuilder()
-            .addComponents(new ButtonBuilder().setLabel("Sponsor").setURL('https://discord.gg/7MEHnM6T87').setStyle(ButtonStyle.Link))
+           // .addComponents(new ButtonBuilder().setLabel("Sponsor").setURL('https://discord.gg/7MEHnM6T87').setStyle(ButtonStyle.Link))
             .addComponents(new ButtonBuilder().setLabel("Support Server").setURL(supportUrl).setStyle(ButtonStyle.Link));
 
         const categories = readdirSync("./src/commands/Slash/");
@@ -84,7 +84,7 @@ module.exports = {
                                 iconURL: interaction.guild.iconURL({ dynamic: true }),
                             })
                             .setDescription(
-                                `\ \n\n**\<:pause:932896007526707271> ${
+                                `\ \n\n**\ ${
                                     directory.slice(0, 1).toUpperCase() + directory.slice(1)
                                 } Commands:**\n${client.slashCommands
                                     .filter((c) => c.category === directory)
