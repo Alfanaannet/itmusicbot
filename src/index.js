@@ -3,7 +3,7 @@ const app = express();
 app.get('/', (req, res) => {
   res.send('Hello Express app!')
 });
-app.listen(3000, () => {
+app.listen(3034, () => {
   console.log('[INFO] Bot Online!');
 });
 const MainClient = require("./fancy.js");
