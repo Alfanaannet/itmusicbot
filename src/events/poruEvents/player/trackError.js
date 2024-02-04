@@ -8,13 +8,13 @@ module.exports.run = async (client, player, track) => {
 
     console.log(`Error when loading song! Track error is in [${player.guildId}]`);
 
-    if (player.queue.length) {
-        await player.stop();
+    //if (player.queue.length) {
+      //  await player.stop();
 
-        const embed = new EmbedBuilder().setDescription(`\`❌\` | Failed to load the track: \`Auto-Stop\``).setColor(client.color);
+       // const embed = new EmbedBuilder().setDescription(`\`❌\` | Failed to load the track: \`Auto-Stop\``).setColor(client.color);
 
-        return channel.send({ embeds: [embed] });
-    } else {
-        return player.destroy();
-    }
+        //return channel.send({ embeds: [embed] });
+    //} else {
+        //return player.destroy();
+    //}
 };
