@@ -25,10 +25,10 @@ module.exports = {
   nodes: [
     {
       name: process.env.NODE_NAME1 || "Main", 
-      host: process.env.NODE_HOST1 || "lavalink.lexnet.cc", 
-      port: parseInt(process.env.NODE_PORT1 || "443"), 
-      password: process.env.NODE_PASSWORD1 || "lexn3tl@val!nk", 
-      secure: parseBoolean(process.env.NODE_SECURE1 || "true"),
+      host: process.env.NODE_HOST1 || "bali.weissx.com", 
+      port: parseInt(process.env.NODE_PORT1 || "14007"), 
+      password: process.env.NODE_PASSWORD1 || "youshallnotpass", 
+      secure: parseBoolean(process.env.NODE_SECURE1 || "false"),
     }
   ],
 
