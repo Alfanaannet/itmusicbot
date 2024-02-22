@@ -28,7 +28,7 @@ module.exports = {
       host: process.env.NODE_HOST1 || "lavalink.lexnet.cc", 
       port: parseInt(process.env.NODE_PORT1 || "443"), 
       password: process.env.NODE_PASSWORD1 || "lexn3tl@val!nk", 
-      secure: parseBoolean(process.env.NODE_SECURE1 || true),
+      secure: parseBoolean(process.env.NODE_SECURE1 || "true"),
     }
   ],
 
