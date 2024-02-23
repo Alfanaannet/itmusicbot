@@ -136,7 +136,7 @@ module.exports.run = async (client, player, track) => {
 
                 if (player.message) await player.message.delete();
 
-                //await player.destroy();
+                await player.stop();
             }
         } else if (message.customId === "pause") {
             if (!player) {
