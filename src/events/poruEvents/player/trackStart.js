@@ -130,13 +130,13 @@ module.exports.run = async (client, player, track) => {
             }
         } else if (message.customId === "stop") {
             if (!player) {
-                //collector.stop();
+                collector.stop();
             } else {
                 message.deferUpdate();
 
                 if (player.message) await player.message.delete();
 
-                await player.destroy();
+                //await player.destroy();
             }
         } else if (message.customId === "pause") {
             if (!player) {
