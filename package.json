@@ -25,7 +25,8 @@
     "poru": "github:adh319/poru",
     "pretty-ms": "^7.0.1",
     "quick.db": "^9.1.7",
-    "voucher-code-generator": "^1.3.0"
+    "voucher-code-generator": "^1.3.0",
+    "ytdl-core": "^4.11.5"
   },
   "author": "WhoFancy?#0000",
   "license": "MIT",
