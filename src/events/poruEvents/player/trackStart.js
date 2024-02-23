@@ -130,7 +130,7 @@ module.exports.run = async (client, player, track) => {
             }
         } else if (message.customId === "stop") {
             if (!player) {
-                collector.stop();
+                //collector.stop();
             } else {
                 message.deferUpdate();
 
