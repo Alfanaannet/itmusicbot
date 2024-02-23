@@ -30,7 +30,7 @@ module.exports.run = async (client, player, track) => {
             { name: `Author:`, value: `${trackAuthor}`, inline: true },
             { name: `Requested By:`, value: `${track.info.requester}`, inline: true },
             { name: `Duration:`, value: `${trackDuration}`, inline: true },
-            { name: `Download Song:`, value: `${track.streamURL}`, inline: true },
+            { name: `Download Song:`, value: `[Click here](${track.streamURL})`, inline: true },
         ])
         .setColor(client.color)
         .setFooter({ text: `Loop Mode: ${capital(player.loop)} • Queue Left: ${player.queue.length} • Volume: ${player.volume}%` });
