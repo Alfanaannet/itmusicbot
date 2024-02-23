@@ -2,6 +2,7 @@ const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require("
 const formatDuration = require("../../../structures/FormatDuration.js");
 const GControl = require("../../../settings/models/Control.js");
 const capital = require("node-capitalize");
+const ytdl = require("ytdl-core");
 
 module.exports.run = async (client, player, track) => {
     let Control = await GControl.findOne({ guild: player.guildId });
@@ -18,6 +19,9 @@ module.exports.run = async (client, player, track) => {
     const trackDuration = track.info.isStream ? "LIVE" : formatDuration(track.info.length);
     const trackAuthor = track.info.author ? authors : "Unknown";
     const trackTitle = track.info.title ? titles : "Unknown";
+    const videoUrl = track.info.uri;
+    const videoInfo = await ytdl.getInfo(videoUrl);
+    const audioFormats = ytdl.filterFormats(videoInfo.formats, "audioonly");
 
     const Started = new EmbedBuilder()
         .setAuthor({
@@ -30,7 +34,7 @@ module.exports.run = async (client, player, track) => {
             { name: `Author:`, value: `${trackAuthor}`, inline: true },
             { name: `Requested By:`, value: `${track.info.requester}`, inline: true },
             { name: `Duration:`, value: `${trackDuration}`, inline: true },
-            { name: `Download Song:`, value: `[Click here](${track.info.streamURL})`, inline: true },
+            { name: `Download Song:`, value: `[Click here](${audioFormats[0].url})`, inline: true },
         ])
         .setColor(client.color)
         .setFooter({ text: `Loop Mode: ${capital(player.loop)} • Queue Left: ${player.queue.length} • Volume: ${player.volume}%` });
