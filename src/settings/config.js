@@ -26,7 +26,7 @@ module.exports = {
     {
       name: process.env.NODE_NAME1 || "Main", 
       host: process.env.NODE_HOST1 || "bali.weissx.host", 
-      port: parseInt(process.env.NODE_PORT1 || "14080"), 
+      port: parseInt(process.env.NODE_PORT1 || "14007"), 
       password: process.env.NODE_PASSWORD1 || "youshallnotpass", 
       secure: parseBoolean(process.env.NODE_SECURE1 || "false"),
     }
