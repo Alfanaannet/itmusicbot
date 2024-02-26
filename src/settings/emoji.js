@@ -1,6 +1,6 @@
 module.exports = {
     button: {
-        pause: "<:pausebutton:1211810231940554842> ",
+        pause: "<:pausebutton:1211810231940554842>",
         resume: "<:playbutton:1211810234155139092>",
         stop: "<:stopbutton:1211810213917630556>",
         skip: "<:nextbutton:1211810225271873667>",
