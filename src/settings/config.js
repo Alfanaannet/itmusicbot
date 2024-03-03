@@ -25,9 +25,9 @@ module.exports = {
   nodes: [
     {
       name: process.env.NODE_NAME1 || "Main", 
-      host: process.env.NODE_HOST1 || "bali.weissx.host", 
-      port: parseInt(process.env.NODE_PORT1 || "14007"), 
-      password: process.env.NODE_PASSWORD1 || "youshallnotpass", 
+      host: process.env.NODE_HOST1 || "lava3.fypmoon.org", 
+      port: parseInt(process.env.NODE_PORT1 || "14003"), 
+      password: process.env.NODE_PASSWORD1 || "oneofremii", 
       secure: parseBoolean(process.env.NODE_SECURE1 || "false"),
     }
   ],
