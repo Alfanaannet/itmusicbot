@@ -24,18 +24,24 @@ module.exports = {
   },
   nodes: [
     {
-      name: process.env.NODE_NAME1 || "Main", 
-      host: process.env.NODE_HOST1 || "lava3.fypmoon.org", 
-      port: parseInt(process.env.NODE_PORT1 || "14003"), 
-      password: process.env.NODE_PASSWORD1 || "oneofremii", 
+      name: process.env.NODE_NAME1 || "INZEWORLD-NODE (RU)", 
+      host: process.env.NODE_HOST1 || "85.88.163.80", 
+      port: parseInt(process.env.NODE_PORT1 || "3128"), 
+      password: process.env.NODE_PASSWORD1 || "saher.inzeworld.com", 
       secure: parseBoolean(process.env.NODE_SECURE1 || "false"),
     }
   ],
-
+// {
+//   "identifier": "",
+//   "host": "",
+//   "port": 3128,
+//   "password": "",
+//   "secure": false
+// }
 
   mongoUri: process.env.MONGO_URI || "", 
-  supportUrl: process.env.SUPPORT_URL || "https://discord.gg/its-community-917580196251594815", 
-  voteUrl: process.env.VOTE_URL || "https://discord.gg/its-community-917580196251594815",
+  supportUrl: process.env.SUPPORT_URL || "https://discord.gg/", 
+  voteUrl: process.env.VOTE_URL || "https://discord.gg/",
   inviteUrl: process.env.INVITE_URL || "https://discord.com/api/oauth2/authorize?client_id=1194101212723822602&permissions=40271764260928&scope=bot%20applications.commands", 
   imageUrl: process.env.IMAGE_URL || "https://media.discordapp.net/attachments/1162795987014787162/1197198433962971156/pngtree-pair-of-headphones-on-the-water-at-nighttime-image_2931863.png?ex=65c39f6d&is=65b12a6d&hm=e94858f4cbfc92ee4868da52953a4015b2c2703c5f0e12f2e144d446be72d8fe&=&format=webp&quality=lossless&width=800&height=448",
 };
