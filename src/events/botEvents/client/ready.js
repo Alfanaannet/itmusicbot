@@ -32,7 +32,7 @@ module.exports.run = async (client) => {
             },
             { 
               type: ActivityType.Playing, 
-              name: "・💻┆ITS COMMUNITY"
+              name: "・💻┆ ARAB WARRIORS ROLE PLAY"
             }
            // { 
             //  type: ActivityType.Watching,
