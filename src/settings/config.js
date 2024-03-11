@@ -40,10 +40,10 @@ module.exports = {
 // }
 
   mongoUri: process.env.MONGO_URI || "", 
-  supportUrl: process.env.SUPPORT_URL || "https://discord.gg/", 
-  voteUrl: process.env.VOTE_URL || "https://discord.gg/",
+  supportUrl: process.env.SUPPORT_URL || "https://discord.gg/Q2snkDW8fy", 
+  voteUrl: process.env.VOTE_URL || "https://discord.gg/Q2snkDW8fy",
   inviteUrl: process.env.INVITE_URL || "https://discord.com/api/oauth2/authorize?client_id=1194101212723822602&permissions=40271764260928&scope=bot%20applications.commands", 
-  imageUrl: process.env.IMAGE_URL || "https://media.discordapp.net/attachments/1162795987014787162/1197198433962971156/pngtree-pair-of-headphones-on-the-water-at-nighttime-image_2931863.png?ex=65c39f6d&is=65b12a6d&hm=e94858f4cbfc92ee4868da52953a4015b2c2703c5f0e12f2e144d446be72d8fe&=&format=webp&quality=lossless&width=800&height=448",
+  imageUrl: process.env.IMAGE_URL || "https://cdn.discordapp.com/attachments/1210932652895633478/1216591978020737115/play_1.png?ex=6600f292&is=65ee7d92&hm=b2e8d77778ffe1de2a11b4a427a8ebc7f10810e3f495bc57c472cc8cc33b9e02&",
 };
 
 function parseBoolean(value) {
