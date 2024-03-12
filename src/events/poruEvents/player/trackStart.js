@@ -292,7 +292,7 @@ module.exports.run = async (client, player, track) => {
                         },
                     ])
                     .setColor(client.color)
-                    .setFooter({ text: `Made with 💖 & ITS ELFANAAN` })
+                    .setFooter({ text: `Made with 💖 AW ELFANAAN` })
                     .setTimestamp();
 
                 return message.reply({ embeds: [embed], ephemeral: true });
