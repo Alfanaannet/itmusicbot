@@ -56,7 +56,7 @@ module.exports.run = async (client, oldState, newState) => {
 
                 const TimeoutEmbed = new EmbedBuilder()
                     .setDescription(
-                        `\`<:bye_bye:1200807710858416138>\` | Disconnected...!!! Because I was left alone in <#${vcRoom}>. This can be disable by using \`247\` command.\n\n ITS 💖`,
+                        `\`<:bye_bye:1200807710858416138>\` | Disconnected...!!! Because I was left alone in <#${vcRoom}>. This can be disable by using \`247\` command.\n\n AW 💖`,
                     )
                     .setColor(client.color);
 
