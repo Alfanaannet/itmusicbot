@@ -25,10 +25,10 @@ module.exports = {
   nodes: [
     {
       name: process.env.NODE_NAME1 || "ELFANAAN LAVALINK", 
-      host: process.env.NODE_HOST1 || "bali.weissx.host", 
-      port: parseInt(process.env.NODE_PORT1 || "14007"), 
-      password: process.env.NODE_PASSWORD1 || "youshallnotpass", 
-      secure: parseBoolean(process.env.NODE_SECURE1 || "false"),
+      host: process.env.NODE_HOST1 || "lavalink3-netherlands.alfari.id", 
+      port: parseInt(process.env.NODE_PORT1 || "443"), 
+      password: process.env.NODE_PASSWORD1 || "catfein", 
+      secure: parseBoolean(process.env.NODE_SECURE1 || "true"),
     }
   ],
 // {
