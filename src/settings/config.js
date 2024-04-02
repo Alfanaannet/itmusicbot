@@ -17,17 +17,17 @@ module.exports = {
     clientID: process.env.SPOTIFY_ID || "6935c2bae60d4159a90cdea39c22c6d8", // <==== SPOTIFY CLIENT ID
     clientSecret: process.env.SPOTIFY_SECRET || "ada8bf9be56442dd930f7f934773bd9d", // <==== SPOTIFY CLIENT SECRET
     reconnectTries: 5, // <==== TOTAL ATTEMPS TO TRY IF RECONNECT FAILED. YOU CAN CHANGE IT TO "Infinity" FOR UNLIMITED ATTEMPS.
-    playlistLimit: 2, // <==== 1 = 100 TRACKS lavalink-v3.oryzen.xyz
+    playlistLimit: 2, // <==== 1 = 100 TRACKS 
     albumLimit: 2, // <==== 1 = 50 TRACKS 80
-    artistLimit: 2, // <==== 1 = 50 TRACKS oryzen.xyz
+    artistLimit: 2, // <==== 1 = 50 TRACKS 
     searchMarket: "us",
   },
   nodes: [
     {
       name: process.env.NODE_NAME1 || "ELFANAAN LAVALINK", 
-      host: process.env.NODE_HOST1 || "de1.bot-hosting.net", 
-      port: parseInt(process.env.NODE_PORT1 || "21857"), 
-      password: process.env.NODE_PASSWORD1 || "https://discord.gg/awrp", 
+      host: process.env.NODE_HOST1 || "lavalink-v3.oryzen.xyz", 
+      port: parseInt(process.env.NODE_PORT1 || "80"), 
+      password: process.env.NODE_PASSWORD1 || "oryzen.xyz", 
       secure: parseBoolean(process.env.NODE_SECURE1 || "false"),
     }
   ],
