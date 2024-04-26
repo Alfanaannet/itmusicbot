@@ -25,18 +25,18 @@ module.exports = {
   nodes: [
     {
       name: process.env.NODE_NAME1 || "ELFANAAN LAVALINK", 
-      host: process.env.NODE_HOST1 || "n1.ll.darrennathanael.com", 
-      port: parseInt(process.env.NODE_PORT1 || "2269"), 
-      password: process.env.NODE_PASSWORD1 ||"glasshost1984", 
-      secure: parseBoolean(process.env.NODE_SECURE1 || "false"),
+      host: process.env.NODE_HOST1 || "lava-v3.ajieblogs.eu.org", 
+      port: parseInt(process.env.NODE_PORT1 || "443"), 
+      password: process.env.NODE_PASSWORD1 ||"https://dsc.gg/ajidevserver", 
+      secure: parseBoolean(process.env.NODE_SECURE1 || "true"),
     }
   ],
 // {
-//   "identifier": "GlassHost - NY1",
-//   "password": ,
-//   "host": ,
-//   "port": 2269,
-//   "secure": false
+//   "identifier": "AjieDev - Lavalink [SSL | UK]",
+//   "password": "",
+//   "host": "",
+//   "port": 443,
+//   "secure": true
 // }
 
   mongoUri: process.env.MONGO_URI || "", 
