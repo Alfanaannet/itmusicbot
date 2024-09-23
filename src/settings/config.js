@@ -25,9 +25,9 @@ module.exports = {
   nodes: [
     {
       name: process.env.NODE_NAME1 || "ELFANAAN LAVALINK", 
-      host: process.env.NODE_HOST1 || "us1.lavalink.creavite.co", 
-      port: parseInt(process.env.NODE_PORT1 || "20080"), 
-      password: process.env.NODE_PASSWORD1 || "auto.creavite.co", 
+      host: process.env.NODE_HOST1 || "lava-v3.ajieblogs.eu.org", 
+      port: parseInt(process.env.NODE_PORT1 || "80"), 
+      password: process.env.NODE_PASSWORD1 || "https://dsc.gg/ajidevservero", 
       secure: parseBoolean(process.env.NODE_SECURE1 || "false"),
     }
   ],
