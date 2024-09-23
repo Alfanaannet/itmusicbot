@@ -26,17 +26,17 @@ module.exports = {
     {
       name: process.env.NODE_NAME1 || "ELFANAAN LAVALINK", 
       host: process.env.NODE_HOST1 || "shimmer-proud-plum.glitch.me", 
-      port: parseInt(process.env.NODE_PORT1 || "443"), 
+      port: parseInt(process.env.NODE_PORT1 || "80"), 
       password: process.env.NODE_PASSWORD1 || "Elfanaan@1", 
-      secure: parseBoolean(process.env.NODE_SECURE1 || "true"),
+      secure: parseBoolean(process.env.NODE_SECURE1 || "false"),
     }
   ],
 // {
-//   "identifier": "Lexnet.cc - NA",
-//   "password": "",
+//   "identifier": "AjieDev - Lavalink [Non SSL | US]",
+//   "password": "https://dsc.gg/ajidevserver",
 //   "host": "",
-//   "port": 2333,
-//   "secure": false
+//   "port": 80,
+//   "secure": 
 // }
   mongoUri: process.env.MONGO_URI || "", 
   supportUrl: process.env.SUPPORT_URL || "https://discord.gg/Q2snkDW8fy", 
