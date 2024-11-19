@@ -25,9 +25,9 @@ module.exports = {
   nodes: [
     {
       name: process.env.NODE_NAME1 || "ELFANAAN LAVALINK", 
-      host: process.env.NODE_HOST1 || "lava-v3.ajieblogs.eu.org", 
-      port: parseInt(process.env.NODE_PORT1 || "80"), 
-      password: process.env.NODE_PASSWORD1 || "https://dsc.gg/ajidevservero", 
+      host: process.env.NODE_HOST1 || "5.249.164.150", 
+      port: parseInt(process.env.NODE_PORT1 || "22560"), 
+      password: process.env.NODE_PASSWORD1 || "youshallnotpass", 
       secure: parseBoolean(process.env.NODE_SECURE1 || "false"),
     }
   ],
